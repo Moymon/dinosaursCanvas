@@ -5,24 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinosaurs</title>
     <link rel="icon" href="imagenes/dinosaur_icon_126714.svg">
+    
+    <!--Style archive-->
     <link rel="stylesheet" href="style.css">
+    
+    <!---Google font Tiny5 Dou-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!-- GLTFLoader -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-
 </head>
 <body>
-    <div id="hud">
+    <div id="hud" class="tiny5-duo">
         <div>
-            <p>Use the arrow keys to rotate the dinosaur</p>
-            <p>Press 'C' to change the dinosaur</p>
+            <p>Use the keys to move the object dinosaur</p>
+            <div class="content-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                                </svg>
+                            </td>
+                            <td>Down</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+                                </svg>
+                            </td>
+                            <td>Up</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                </svg>
+                            </td>
+                            <td>Right</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                                </svg>
+                            </td>
+                            <td>Left</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <div>
+            <div>
+                <p>Use the keys to rotate the object dinosaur</p>
 
+                <div class="content-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    S
+                                </td>
+                                <td>Down</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    W
+                                </td>
+                                <td>Up</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    D
+                                </td>
+                                <td>Right</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    A
+                                </td>
+                                <td>Left</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    
     </div>
-
-
+    <div class="tiny5-duo">
+        <p>Press 'C' to change the dinosaur</p>
+    </div>
+    <footer class="tiny5-duo">
+        <div>
+            Project By Moymon 
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
