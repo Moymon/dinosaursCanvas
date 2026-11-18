@@ -92,7 +92,7 @@ document.addEventListener('keydown',(event) =>{
             break;
 
         /*Rotacion*/
-        case 'W':
+        case 'w':
             object.rotation.x -= 0.1;
             break;
         case 'S':
